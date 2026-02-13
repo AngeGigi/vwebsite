@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A romantic Valentine's Day surprise — made with love, just for you.">
+    <title>Happy Valentine's Day ❤️</title>
+    <!-- External SDKs kept as in original file; load them only if reachable to avoid console 404s -->
+    <script>
+      (async function(){
+        const sdkPaths = ['/_sdk/element_sdk.js','/_sdk/data_sdk.js'];
+        for (const path of sdkPaths) {
+          try {
+            // Try a lightweight HEAD-like request; use GET because some servers don't allow HEAD
+            const res = await fetch(path, { method: 'GET', cache: 'no-store' });
+            if (res && res.ok) {
+              const s = document.createElement('script');
+              s.src = path;
+              s.defer = true;
+              document.head.appendChild(s);
+            } else {
+              console.info('Optional SDK not available:', path);
+            }
+          } catch (err) {
+            console.info('Unable to fetch optional SDK:', path, err);
+          }
+        }
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Lora:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>/* tiny fallback */ body { box-sizing: border-box; }</style>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  </head>
+  <body class="h-full">
+    <div class="app-wrapper" id="appWrapper"><!-- Floating Hearts Background -->
+      <div class="floating-hearts-container" id="floatingHearts" aria-hidden="true"></div><!-- HERO SECTION -->
+      <header class="hero-section" id="heroSection" role="banner">
+        <div class="hero-big-heart" aria-hidden="true">💕</div>
+        <h1 class="hero-title" id="heroTitle">Happy Valentine's Day, Maha ❤️</h1>
+        <p class="hero-subtitle" id="heroSubtitle">A little surprise made with all my heart.</p>
+        <button class="cta-button" id="ctaBtn"> Open Your Surprise 💌 </button>
+        <div class="scroll-hint" aria-hidden="true">↓</div>
+      </header>
+
+      <!-- LOVE LETTER SECTION -->
+      <section class="content-section envelope-section fade-in" id="letterSection" aria-label="Love Letter">
+        <div class="section-inner">
+          <h2 class="section-heading">A Letter For You, Mahal</h2>
+          <div class="section-divider"><span>💌</span></div>
+          <div class="envelope-wrapper">
+            <div class="envelope-container" id="envelope" role="button" tabindex="0" aria-label="Click to open the envelope">
+              <div class="envelope-flap"></div>
+              <div class="envelope-body"></div>
+            </div>
+            <p class="envelope-hint" id="envelopeHint">Tap to open ✨</p>
+            <div class="letter-card" id="letterCard">
+              <p class="letter-greeting" id="letterGreeting">Hi Mahal,</p>
+              <p class="letter-body-text" id="letterBody"> Thank you, mahal, for coming into my life. And thank you for having the courage and perseverance to pursue a little cutie me☺️. Ang tapang mo magmahal, mahal, and I really admire you for that. You make loving feel safe and easy. 
+
+Valentine’s Day is just an extra day for us to feel loved, but honestly, every day I get to be with you, even the days we’re apart, is one of the most precious parts of my life.
+
+If you say you’re lucky because I’m here, mas maswerte ako dahil meron akong ikaw. I always say this and I’ll say it again, you’re full of surprises, and I love you for that. I love how kind and thoughtful you are. I love your hair, your skin, your eyes… ALL OF YOU.
+
+Obsessed yarn? Kimmy. HAHAHA.
+
+I hope this Valentine’s Day, and this small gesture, gives you a little extra love. Whatever you want to do in life, just know I’m here, supporting you all the way until you achieve that success. I promise to love you more with every heartbeat, today and always.</p>
+              <p class="letter-closing" id="letterClosing">Love, Jelay Cute 💋</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MEMORIES SECTION -->
+      <section class="content-section memories-section fade-in" aria-label="Our Memories">
+        <div class="section-inner">
+          <h2 class="section-heading">Our Beautiful Memories</h2>
+          <div class="section-divider"><span>📸</span></div>
+          <div class="polaroid-grid">
+            <div class="polaroid" style="--rot: -3deg;">
+              <div class="polaroid-image" style="background: linear-gradient(135deg, #fce4ec, #f8bbd0);">
+                <img src="images/BEst bibrthday.JPG" alt="Birthday ko" class="polaroid-thumb" data-caption="Our first date">
+              </div>
+              <p class="polaroid-caption">Birthday ko</p>
+            </div>
+            <div class="polaroid" style="--rot: 2deg;">
+              <div class="polaroid-image" style="background: linear-gradient(135deg, #fff3e0, #ffe0b2);">
+                <img src="images/IMG_2247.JPG" alt="Graduation Day" class="polaroid-thumb" data-caption="Graduation Day">
+              </div>
+              <p class="polaroid-caption">Graduation Day</p>
+            </div>
+            <div class="polaroid" style="--rot: -1deg;">
+              <div class="polaroid-image" style="background: linear-gradient(135deg, #e8eaf6, #c5cae9);">
+                <img src="images/IMG_2246.JPG" alt="Our Tagaytay trip" class="polaroid-thumb" data-caption="Our Tagaytay trip">
+              </div>
+              <p class="polaroid-caption">Our Tagaytay trip</p>
+            </div>
+            <div class="polaroid" style="--rot: 3deg;">
+              <div class="polaroid-image" style="background: linear-gradient(135deg, #e0f7fa, #b2ebf2);">
+                <img src="images/First date as couple.JPG" alt="First Date as Couple" class="polaroid-thumb" data-caption="First Date as Couple">
+              </div>
+              <p class="polaroid-caption">First Date as Couple</p>
+            </div>
+            <div class="polaroid" style="--rot: -2deg;">
+              <div class="polaroid-image" style="background: linear-gradient(135deg, #fce4ec, #f48fb1);">
+                <img src="images/IMG_2241.JPG" alt="Antipolo Trip" class="polaroid-thumb" data-caption="Antipolo Trip">
+              </div>
+              <p class="polaroid-caption">Antipolo Trip</p>
+            </div>
+            <div class="polaroid" style="--rot: 1deg;">
+              <div class="polaroid-image" style="background: linear-gradient(135deg, #fff9c4, #fff176);">
+                <img src="images/IMG_2226.JPG" alt="Best Picturee!" class="polaroid-thumb" data-caption="Best Picturee!">
+              </div>
+              <p class="polaroid-caption">Best Picturee!</p>
+            </div>
+          </div>
+
+          <!-- Timeline -->
+          <div class="timeline fade-in">
+            <div class="timeline-item">
+              <p class="timeline-date">The Beginning</p>
+              <p class="timeline-text">You already had me at your quirky, irresistable, sexy dance move in PE performance task..</p>
+            </div>
+            <div class="timeline-item">
+              <p class="timeline-date">First Adventure</p>
+              <p class="timeline-text"> First gala natin na malayo layo ay sa Antipolo, kapehingahan. Takbuhan at babalik-balikan kasama ka.</p>
+            </div>
+            <div class="timeline-item">
+              <p class="timeline-date">That Special Night</p>
+              <p class="timeline-text"> Sa kapehingahan, binigay mo ko ng kwintas w/ bracelet simbolo na nanliligaw ka. Once na makita mo na sinuot ko yon, tayo na. Special siya kasi first step siya sa kung anong meron tayo ngayon. Funny din to kasi we both know na hindi ako nagaaccessories T__T </p>
+            </div>
+            <div class="timeline-item">
+              <p class="timeline-date">Today &amp; Forever</p>
+              <p class="timeline-text">Every day with you is unknown which is more interesting to me and I know we don't see each other everyday but seeing you at the end of the week is one of the things I look forward to🩷</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SURPRISE SECTION -->
+      <section class="content-section surprise-section fade-in" id="surpriseSection" aria-label="Valentine Surprise">
+        <div class="section-inner" id="surpriseInner">
+          <h2 class="surprise-question" id="surpriseQuestion">Will You Be My Valentine?</h2>
+          <div class="surprise-buttons" id="surpriseButtons">
+            <button class="btn-yes" id="btnYes">Yes 💖</button>
+            <button class="btn-no" id="btnNo">No 🙈</button>
+          </div>
+          <div class="yes-message" id="yesMessage">
+            <div class="yes-msg-emoji">💖</div>
+            <p class="yes-msg-text" id="yesMsgText">You just made me the happiest person alive!</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Heart Explosion Container -->
+      <div class="heart-explosion" id="heartExplosion" aria-hidden="true"></div>
+
+      <!-- FOOTER -->
+      <footer class="valentine-footer" role="contentinfo">
+        <div class="footer-hearts" aria-hidden="true">❤ 💕 ❤</div>
+        <p class="footer-text">Made with all my love, just for you.</p>
+      </footer>
+    </div>
+
+    <script src="script.js" defer></script>
+    <!-- Lightbox markup -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <div class="lightbox-inner" role="dialog" aria-modal="true">
+        <button id="lightboxClose" class="lightbox-close" aria-label="Close">✕</button>
+        <img id="lightboxImg" src="" alt="" />
+        <p id="lightboxCaption" class="lightbox-caption"></p>
+      </div>
+    </div>
+  </body>
+</html>
