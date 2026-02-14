@@ -377,7 +377,10 @@ body {
 
 /* Surprise Section */
 .surprise-section { text-align: center; background: rgba(255, 192, 203, 0.7); min-height: 60%; display: flex; align-items: center; justify-content: center; }
-.surprise-question { font-family: 'Great Vibes', cursive; font-size: clamp(30px, 7vw, 56px); color: var(--deep-red); margin-bottom: 48px; text-shadow: 0 2px 15px rgba(178, 34, 34, 0.15); }
+.surprise-question { font-family: 'Great Vibes', cursive; font-size: clamp(30px, 7vw, 56px); color: var(--deep-red); margin-bottom: 48px; text-shadow: 0 2px 15px rgba(178, 34, 34, 0.15); 
+display: flex;
+  flex-direction: column;
+  }
 .surprise-buttons { display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap; position: relative; min-height: 80px; }
 .btn-yes { padding: 18px 48px; font-family: 'Lora', serif; font-size: 20px; font-weight: 600; color: white; background: linear-gradient(135deg, #d63333, var(--deep-red)); border: none; border-radius: 50px; cursor: pointer; box-shadow: 0 6px 25px rgba(178, 34, 34, 0.4); transition: transform 0.3s ease, box-shadow 0.3s ease; }
 .btn-yes:hover { transform: scale(1.1); box-shadow: 0 10px 35px rgba(178, 34, 34, 0.5); }
