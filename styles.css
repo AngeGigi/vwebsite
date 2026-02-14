@@ -392,7 +392,7 @@ body {
 .yes-message.show { display: flex; }
 @keyframes scaleIn { 0% { transform: scale(0.5); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
 .yes-msg-emoji { font-size: 72px; animation: pulseHeart 1.5s ease-in-out infinite; }
-.yes-msg-text { font-family: 'Lora', serif; font-weight: 600; font-size: clamp(24px, 5vw, 42px); color: #5a2a2a; max-width: 500px; }
+.yes-msg-text { font-family: 'Lora', serif; font-size: 20px; color: #5a2a2a; line-height: 1.5; text-align: center; }
 
 /* Footer */
 .valentine-footer { text-align: center; padding: 40px 24px; position: relative; z-index: 2; background: rgba(255, 192, 203, 0.7); }
